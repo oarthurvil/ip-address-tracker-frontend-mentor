@@ -8,7 +8,7 @@ let resultIsp = document.querySelector(".result_isp");
 
 
 let address = function () {
- let addressFetch = 'http://ip-api.com/json/' + inputValue.value;
+ let addressFetch = 'https://geo.ipify.org/api/v1?apiKey=at_yJq4UOLGrmSqTN3xxaM7iVeeZD4KG&domain=' + inputValue.value;
   
   fetch(addressFetch)
   .then(response => response.json())
@@ -20,9 +20,9 @@ let address = function () {
     // Write information on DOM //
     ////////////////////////////////
   
-    resultIp.innerHTML = result.query;
-    resultLocation.innerHTML = `${result.city}-${result.region}, ${result.country}`;
-    resultTime.innerHTML = result.timezone;
+    resultIp.innerHTML = result.ip;
+    resultLocation.innerHTML = `${result.location.city}-${result.location.region}, ${result.location.country}`;
+    resultTime.innerHTML = result.location.timezone;
     resultIsp.innerHTML = result.isp;
 
     if(result.status === "fail"){
@@ -37,8 +37,8 @@ let address = function () {
     // Show coordinates in the map //
     ////////////////////////////////
 
-    let lati = result.lat;
-    let long = result.lon;  
+    let lati = result.location.lat;
+    let long = result.location.lng;  
 
     let coordinates = {lat: lati, lng: long};
 
