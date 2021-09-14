@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ip Address Tracker</title>
+
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="./style/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
+   
+    
+
+    <script src="./script/app.js" defer></script>
+
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNlshwPSyi7pq-NjuxGJ2VdZ5aVaAiK7g&callback=address">
+    </script>
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <label for="address">IP Address Tracker</label>
+            <div class="input_and_button">
+                <input type="text" class="input_address" name="address" placeholder="Search for any IP address or domain">
+                <button class="btn_search"><img src="./images/icon-arrow.svg" alt=""></button>
+            </div>
+           
+        </div>
+
+        <div class="container result_search">           
+            <div class="container">
+                <p class="info_type">IP ADDRESS</p>
+                <p class="info_result result_ip"></p>
+            </div>
+            <div class="container">
+                <p class="info_type">LOCATION</p>
+                <p class="info_result result_location"></p>
+            </div>
+            <div class="container">
+                <p class="info_type">TIMEZONE</p>
+                <p class="info_result result_time"></p>
+            </div>
+            <div class="container">
+                <p class="info_type">ISP</p>
+                <p class="info_result result_isp"></p>
+            </div>
+        </div>
+
+
+    </header>
+    <section>
+        <div id="mapa"></div>
+    </section>
+    
+</body>
+</html>
