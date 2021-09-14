@@ -47,7 +47,6 @@ Mobile: <br/>
 - Flexbox
 - Mobile-first workflow
 - Javascript
-- 
 
 ### What I learned
 
