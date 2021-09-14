@@ -60,7 +60,7 @@ let address = function () {
 
 }
 
-address();
+document.addEventListener("load", address());
 
 btn.addEventListener("click", function(){
   address()
