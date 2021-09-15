@@ -20,16 +20,19 @@ let address = function () {
     // Write information on DOM //
     ////////////////////////////////
   
-    resultIp.innerHTML = result.ip;
-    resultLocation.innerHTML = `${result.location.city}-${result.location.region}, ${result.location.country}`;
-    resultTime.innerHTML = result.location.timezone;
-    resultIsp.innerHTML = result.isp;
-
-    if(result.status === "fail"){
+   if(result.messages === 'Input correct domain.'){
+    
       resultIp.innerHTML = "Invalid address";
       resultLocation.innerHTML = "Invalid address";
       resultTime.innerHTML = "Invalid address";
       resultIsp.innerHTML = "Invalid address";
+    
+    } else {
+     
+      resultIp.innerHTML = result.ip;
+      resultLocation.innerHTML = `${result.location.city}-${result.location.region}, ${result.location.country}`;
+      resultTime.innerHTML = result.location.timezone;
+      resultIsp.innerHTML = result.isp;
     }
 
 
