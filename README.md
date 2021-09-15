@@ -53,7 +53,7 @@ Mobile: <br/>
 
 ```js
 let address = function () {
-  let addressFetch = 'http://ip-api.com/json/' + inputValue.value;
+  let addressFetch = 'https://geo.ipify.org/api/v1?apiKey=at_yJq4UOLGrmSqTN3xxaM7iVeeZD4KG&domain=' + inputValue.value;
   
   fetch(addressFetch)
   .then(response => response.json())
