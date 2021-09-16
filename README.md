@@ -47,6 +47,8 @@ Mobile: <br/>
 - Flexbox
 - Mobile-first workflow
 - Javascript
+-  IP Geolocation API by IPify
+-  Google Maps JavaScript API
 
 ### What I learned
 
