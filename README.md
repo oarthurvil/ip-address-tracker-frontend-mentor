@@ -37,7 +37,7 @@ Mobile: <br/>
 
 ### Links
 
-- Solution URL: [IP Address Tracker](https://oarthurvil.github.io/IP-Address-Tracker-Challenge-04-Frontend-Mentor/)
+- Solution URL: [IP Address Tracker](https://oarthurvil.github.io/ip-address-tracker-frontend-mentor/)
 
 ## My process
 
